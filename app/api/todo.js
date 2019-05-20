@@ -1,7 +1,12 @@
 module.exports = (app, todo) => {
   //모든 todo 조회
   app.get("/todos", (req, res) => {
-    return todo.findAll().then(result => res.json(result));
+    try {
+      return todo.findAll().then(result => res.json(result));
+    } catch (error) {
+      console.log(error);
+    }
+
   });
 
   //특정 todo 조회
