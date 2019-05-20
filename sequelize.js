@@ -1,8 +1,8 @@
 const Sequelize = require("sequelize");
 const todoModel = require("./models/todo");
 
-const sequelize = new Sequelize("todo_list", "root", "", {
-  host: "localhost",
+const sequelize = new Sequelize("todo_list", "b95956d60a1e45", "afec3d9d", {
+  host: "us-cdbr-iron-east-02.cleardb.net",
   dialect: "mysql",
   pool: {
     max: 10,
