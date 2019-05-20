@@ -15,6 +15,6 @@ apiTodo(app, todo);
 
 const port = 8080;
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Running on http://localhost:${port}`);
 });
